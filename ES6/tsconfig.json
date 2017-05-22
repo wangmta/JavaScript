@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./JS",
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+/*  "files": [
+    "./gulpfile.ts"
+  ], */ // delegate compilation to gulp, prevent default compiler provided by IDE
+  "exclude": [
+    "node_modules"
+  ]
+}
