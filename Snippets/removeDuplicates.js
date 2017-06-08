@@ -26,3 +26,18 @@ var removeDuplicates = function (arr) {
 }
 
 console.log(removeDuplicates(test));
+
+//method 3
+
+function removeDuplicate(arr) {
+    var obj = {}, newArr = [], elem;
+
+    for(var i=0; i<arr.length; i++){
+        elem = arr[i];
+        if(!obj[elem]){
+            newArr.push(elem);
+            obj[elem] = true;
+        }
+    }
+    return newArr;
+}
